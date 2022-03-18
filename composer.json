@@ -1,0 +1,20 @@
+{
+    "name": "muath-ye/miniature-octo",
+    "description": "A mini MVC app demonstrates tree view from two tables.",
+    "type": "project",
+    "require": {
+        "filp/whoops": "^2.14"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "muathye",
+            "email": "muath.ye@gmail.com"
+        }
+    ]
+}
