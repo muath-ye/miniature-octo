@@ -33,4 +33,14 @@ class PagesController
         // return view('categories', compact('data'));
         return view('categories');
     }
+    
+    /**
+     * Show the accounts page.
+     */
+    public function accounts()
+    {
+        $accounts_types = App::get('database')->all('accounts_types');
+
+        return view('accounts', compact('accounts_types'));
+    }
 }
