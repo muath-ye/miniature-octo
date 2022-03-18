@@ -11,4 +11,12 @@ class PagesController
     {
         return view('index');
     }
+    
+    /**
+     * Show the Sql page.
+     */
+    public function sql()
+    {
+        return view('sql');
+    }
 }
