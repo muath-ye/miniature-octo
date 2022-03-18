@@ -15,7 +15,7 @@
 </div>
 
 
-<div class="contianer text-left">
+<div class="contianer text-right">
 <?php
 
 
