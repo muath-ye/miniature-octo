@@ -22,3 +22,14 @@ function redirect($path)
 {
     header("Location: /{$path}");
 }
+
+
+/**
+ * Get a assets in public.
+ *
+ * @param  string $name
+ */
+function asset($name)
+{
+    return "/public/{$name}";
+}
