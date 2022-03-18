@@ -1,5 +1,43 @@
 body {
-    background-image: linear-gradient(180deg, #eee, #fff 100px, #fff);
+    font-family: var(--bs-font-sans-serif);
+    background: #E0DCCC;
+    color: #333;
+}
+
+h1 {
+    font-size: 3.5em;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: -0.075em;
+    margin-bottom: 0.25em;
+    line-height: 1.2;
+}
+
+h1::-moz-selection {
+    text-shadow: 0 0 0 #D7624E, 0.0025em 0.0025em 0 #D7624E, 0.005em 0.005em 0 #D7624E, 0.0075em 0.0075em 0 #D7624E, 0.01em 0.01em 0 #D7624E, 0.0125em 0.0125em 0 #D7624E, 0.015em 0.015em 0 #D7624E, 0.0175em 0.0175em 0 #D7624E, 0.02em 0.02em 0 #D7624E, 0.0225em 0.0225em 0 #D7624E, 0.025em 0.025em 0 #D7624E, 0.0275em 0.0275em 0 #D7624E, 0.03em 0.03em 0 #D7624E, 0.0325em 0.0325em 0 #D7624E, 0.035em 0.035em 0 #D7624E, 0.0375em 0.0375em 0 #D7624E, 0.04em 0.04em 0 #D7624E, 0.0425em 0.0425em 0 #D7624E, 0.045em 0.045em 0 #D7624E, 0.0475em 0.0475em 0 #D7624E, 0.05em 0.05em 0 #D7624E, 0.0525em 0.0525em 0 #D7624E, 0.055em 0.055em 0 #D7624E, 0.0575em 0.0575em 0 #D7624E, 0.06em 0.06em 0 #D7624E, 0.0625em 0.0625em 0 #D7624E, 0.065em 0.065em 0 #D7624E, 0.0675em 0.0675em 0 #D7624E, 0.07em 0.07em 0 #D7624E, 0.0725em 0.0725em 0 #D7624E, 0.075em 0.075em 0 #D7624E, 0.0775em 0.0775em 0 #D7624E, 0.08em 0.08em 0 #D7624E, 0.0825em 0.0825em 0 #D7624E, 0.085em 0.085em 0 #D7624E, 0.0875em 0.0875em 0 #D7624E, 0.09em 0.09em 0 #D7624E, 0.0925em 0.0925em 0 #D7624E, 0.095em 0.095em 0 #D7624E, 0.0975em 0.0975em 0 #D7624E, 0.1em 0.1em 0 #D7624E;
+}
+
+h1::selection {
+    text-shadow: 0 0 0 #D7624E, 0.0025em 0.0025em 0 #D7624E, 0.005em 0.005em 0 #D7624E, 0.0075em 0.0075em 0 #D7624E, 0.01em 0.01em 0 #D7624E, 0.0125em 0.0125em 0 #D7624E, 0.015em 0.015em 0 #D7624E, 0.0175em 0.0175em 0 #D7624E, 0.02em 0.02em 0 #D7624E, 0.0225em 0.0225em 0 #D7624E, 0.025em 0.025em 0 #D7624E, 0.0275em 0.0275em 0 #D7624E, 0.03em 0.03em 0 #D7624E, 0.0325em 0.0325em 0 #D7624E, 0.035em 0.035em 0 #D7624E, 0.0375em 0.0375em 0 #D7624E, 0.04em 0.04em 0 #D7624E, 0.0425em 0.0425em 0 #D7624E, 0.045em 0.045em 0 #D7624E, 0.0475em 0.0475em 0 #D7624E, 0.05em 0.05em 0 #D7624E, 0.0525em 0.0525em 0 #D7624E, 0.055em 0.055em 0 #D7624E, 0.0575em 0.0575em 0 #D7624E, 0.06em 0.06em 0 #D7624E, 0.0625em 0.0625em 0 #D7624E, 0.065em 0.065em 0 #D7624E, 0.0675em 0.0675em 0 #D7624E, 0.07em 0.07em 0 #D7624E, 0.0725em 0.0725em 0 #D7624E, 0.075em 0.075em 0 #D7624E, 0.0775em 0.0775em 0 #D7624E, 0.08em 0.08em 0 #D7624E, 0.0825em 0.0825em 0 #D7624E, 0.085em 0.085em 0 #D7624E, 0.0875em 0.0875em 0 #D7624E, 0.09em 0.09em 0 #D7624E, 0.0925em 0.0925em 0 #D7624E, 0.095em 0.095em 0 #D7624E, 0.0975em 0.0975em 0 #D7624E, 0.1em 0.1em 0 #D7624E;
+}
+
+p {
+    margin-bottom: 1.3em;
+}
+
+p::-moz-selection {
+    background: #D7624E;
+    color: white;
+}
+
+h1::selection {
+    background: #742b01;
+    color: white;
+}
+
+::selection {
+    background: #D7624E;
+    color: white;
 }
 
 .active {
