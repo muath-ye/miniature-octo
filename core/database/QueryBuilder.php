@@ -28,9 +28,23 @@ class QueryBuilder
      *
      * @param string $table
      */
-    public function selectAll($table)
+    public function all($table)
     {
         $statement = $this->pdo->prepare("select * from {$table}");
+
+        $statement->execute();
+
+        return $statement->fetchAll(PDO::FETCH_CLASS);
+    }
+
+    /**
+     * Select all records where condition from a database table.
+     *
+     * @param string $table
+     */
+    public function where($table, $where = '')
+    {
+        $statement = $this->pdo->prepare("select * from {$table} {$where}");
 
         $statement->execute();
 
