@@ -10,10 +10,26 @@ Miniature-Octo is a clean and classy mini MVC app demonstrates tree view from tw
 - Recursion example.
 - A lot more.
 
+### Requirement
+
+```
+PHP >= 8.0.2
+```
+
 ### Installing
 
 ```bash
 git clone https://github.com/muath-ye/miniature-octo.git
+
+cd miniature-octo
+
+php -S 127.0.0.1:8000
+```
+
+### Installing via composer
+
+```bash
+composer create-project muath-ye/miniature-octo
 
 cd miniature-octo
 
