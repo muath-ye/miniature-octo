@@ -12,7 +12,8 @@ return [
         'password' => env('DB_PASSWORD', ''),
         'connection' => 'mysql:host=' . env('DB_HOST', '127.0.0.1') . ';port=' . env('DB_PORT', '3306'),
         'options' => [
-            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
+            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+            PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"
         ]
     ]
 ];
