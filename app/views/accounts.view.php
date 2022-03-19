@@ -9,7 +9,8 @@
 <div class="contianer text-center">
     
 <?php foreach ($accounts_types as $account) : ?>
-    <a class="btn btn-<?= $_GET['account'] == $account->id ? 'primary' : 'default' ; ?>" href="?account=<?= $account->id ?>"><?= $account->name; ?></a>
+    <?php $selected_acount = isset($_GET['account']) ? $_GET['account'] : 1 ;?>
+    <a class="btn btn-<?= $selected_acount == $account->id ? 'primary' : 'default' ; ?>" href="?account=<?= $account->id ?>"><?= $account->name; ?></a>
 <?php endforeach; ?>
 
 </div>
