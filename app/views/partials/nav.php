@@ -14,6 +14,7 @@
                 <a class="me-3 py-2 text-dark text-decoration-none" href="/categories">التصنيفات</a>
                 <a class="me-3 py-2 text-dark text-decoration-none" href="/accounts">الحسابات</a>
                 <a class="me-3 py-2 text-dark text-decoration-none" href="/sql">قاعدة البيانات</a>
+                <a class="me-3 py-2 text-dark text-decoration-none" href="/totp">TimeBasedTwoFactorPassword</a>
             </nav>
         </div>
     </header>
