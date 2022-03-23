@@ -55,10 +55,16 @@ class PagesController
         /** Create new secret for each user and app */
         // $secret = $totp->createSecret();
         $secret = 'LLFIFKN5CW56PKWV';
+        // $secret = '12345678901234567890';
         // echo "Secret is: ".$secret."\n\n";
 
         /** Generate the QR code to be stored in authenticator app */
-        $qrCodeUrl = $totp->getQRCodeGoogleUrl('Blog', $secret);
+        /*
+        otpauth://totp/Obeikan AuthApp:anwar@obeikan.com?secret=12345678901234567890&period=30&digits=6&algorithm=SHA1&issuer=Obeikan AuthApp
+        otpauth://totp/Obeikan%20AuthApp:anwar%40obeikan.com?secret=12345678901234567890&period=30&digits=6&algorithm=SHA1&issuer=Obeikan%20AuthApp
+        otpauth%3A%2F%2Ftotp%2FObeikan+AuthApp%3Aanwar%40obeikan.com%3Fsecret%3D12345678901234567890&size=200x200&ecc=M
+        */
+        $qrCodeUrl = $totp->getQRCodeGoogleUrl('ObeikanTow', $secret);
         // echo "Google Charts URL for the QR-Code: ".$qrCodeUrl."\n\n";
 
         /** Test the one time password from the authenticator app with $oneCode */

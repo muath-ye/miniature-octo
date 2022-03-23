@@ -111,6 +111,13 @@ class Totp
             $urlencoded .= urlencode('&issuer='.urlencode($title));
         }
 
+        $urlencoded .= urlencode('&period='.urlencode(30));
+        $urlencoded .= urlencode('&digits='.urlencode(6));
+        $urlencoded .= urlencode('&algorithm='.urlencode('SHA1'));
+
+        // $urlencoded = "otpauth://totp/Obeikan AuthApp:anwar@obeikan.com?secret=12345678901234567890&period=30&digits=6&algorithm=SHA1&issuer=Obeikan AuthApp";
+        
+        // // return $urlencoded;
         return "https://api.qrserver.com/v1/create-qr-code/?data=$urlencoded&size=${width}x${height}&ecc=$level";
     }
 
