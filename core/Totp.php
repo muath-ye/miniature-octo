@@ -122,6 +122,22 @@ class Totp
     }
 
     /**
+     * Get QR-Code URL for image, from google charts.
+     *
+     * @param string $name
+     * @param string $secret
+     * @param string $title
+     * @param array  $params
+     *
+     * @return string
+     */
+    public function getAuthLink($secret, $name = "muath.ye@gmail.com", $title = "Miniature")
+    {
+        $image = "https://raw.githubusercontent.com/muath-ye/muath-ye/master/muathye.png";
+        return "otpauth://totp/{$name}?secret={$secret}&issuer={$title}&image={$image}&algorithm=SHA1&digits=6&period=10";
+    }
+
+    /**
      * Check if the code is correct. This will accept codes starting from $discrepancy*30sec ago to $discrepancy*30sec from now.
      *
      * @param string   $secret

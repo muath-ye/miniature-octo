@@ -49,12 +49,14 @@ class PagesController
      * Show the accounts page.
      * Store the secrets in your db
      */
-    public function totp()
+    public function totp($secret = 'PVNS6XK4KF3H64C6')
     {
+        $secret = $_GET['secret'];
+
         $totp = new Totp();
         /** Create new secret for each user and app */
         // $secret = $totp->createSecret();
-        $secret = 'LLFIFKN5CW56PKWV';
+        // $secret = 'PVNS6XK4KF3H64C6';
         // $secret = '12345678901234567890';
         // echo "Secret is: ".$secret."\n\n";
 
@@ -65,13 +67,14 @@ class PagesController
         otpauth%3A%2F%2Ftotp%2FObeikan+AuthApp%3Aanwar%40obeikan.com%3Fsecret%3D12345678901234567890&size=200x200&ecc=M
         */
         $qrCodeUrl = $totp->getQRCodeGoogleUrl('ObeikanTow', $secret);
+        $authLink = $totp->getAuthLink($secret);
         // echo "Google Charts URL for the QR-Code: ".$qrCodeUrl."\n\n";
 
         /** Test the one time password from the authenticator app with $oneCode */
         $oneCode = $totp->getCode($secret);
         // echo "Checking Code '$oneCode' and Secret '$secret':\n";
 
-        $values = ['secret' => $secret, 'qrCodeUrl' => $qrCodeUrl, 'oneCode' => $oneCode];
+        $values = ['authLink' => $authLink, 'secret' => $secret, 'qrCodeUrl' => $qrCodeUrl, 'oneCode' => $oneCode];
 
         return view('totp', ['values' => $values]);
     }
