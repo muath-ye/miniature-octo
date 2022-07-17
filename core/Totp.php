@@ -111,7 +111,30 @@ class Totp
             $urlencoded .= urlencode('&issuer='.urlencode($title));
         }
 
+        $urlencoded .= urlencode('&period='.urlencode(30));
+        $urlencoded .= urlencode('&digits='.urlencode(6));
+        $urlencoded .= urlencode('&algorithm='.urlencode('SHA1'));
+
+        // $urlencoded = "otpauth://totp/Obeikan AuthApp:anwar@obeikan.com?secret=12345678901234567890&period=30&digits=6&algorithm=SHA1&issuer=Obeikan AuthApp";
+        
+        // // return $urlencoded;
         return "https://api.qrserver.com/v1/create-qr-code/?data=$urlencoded&size=${width}x${height}&ecc=$level";
+    }
+
+    /**
+     * Get QR-Code URL for image, from google charts.
+     *
+     * @param string $name
+     * @param string $secret
+     * @param string $title
+     * @param array  $params
+     *
+     * @return string
+     */
+    public function getAuthLink($secret, $name = "muath.ye@gmail.com", $title = "Miniature")
+    {
+        $image = "https://raw.githubusercontent.com/muath-ye/muath-ye/master/muathye.png";
+        return "otpauth://totp/{$name}?secret={$secret}&issuer={$title}&image={$image}&algorithm=SHA1&digits=6&period=10";
     }
 
     /**
