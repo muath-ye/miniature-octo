@@ -1,4 +1,4 @@
-<?php require('partials/head.php'); ?>
+<?php require 'partials/head.php'; ?>
 
 <div class="container">
     <div class="text-center">
@@ -6961,4 +6961,4 @@
     </div>
 </div>
 
-<?php require('partials/footer.php'); ?>
+<?php require 'partials/footer.php'; ?>

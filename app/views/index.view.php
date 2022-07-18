@@ -1,4 +1,4 @@
-<?php require('partials/head.php'); ?>
+<?php require 'partials/head.php'; ?>
 
 <div class="py-5 text-center">
     <h2>نموذج الشجرة</h2>
@@ -7,4 +7,4 @@
     </p>
 </div>
 
-<?php require('partials/footer.php'); ?>
+<?php require 'partials/footer.php'; ?>

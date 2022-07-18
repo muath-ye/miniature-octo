@@ -1,4 +1,4 @@
-<?php require('partials/head.php'); ?>
+<?php require 'partials/head.php'; ?>
 
 <h2 class="text-center"><?= $values['secret']; ?></h2>
 <br>
@@ -35,4 +35,4 @@
     //     drawCode2()
     // });
 </script>
-<?php require('partials/footer.php'); ?>
+<?php require 'partials/footer.php'; ?>

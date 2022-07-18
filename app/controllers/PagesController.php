@@ -14,7 +14,7 @@ class PagesController
     {
         return view('index');
     }
-    
+
     /**
      * Show the Sql page.
      */
@@ -22,7 +22,7 @@ class PagesController
     {
         return view('sql');
     }
-    
+
     /**
      * Show the categories page.
      */
@@ -34,7 +34,7 @@ class PagesController
         // return view('categories', compact('data'));
         return view('categories');
     }
-    
+
     /**
      * Show the accounts page.
      */
@@ -44,7 +44,7 @@ class PagesController
 
         return view('accounts', compact('accounts_types'));
     }
-    
+
     /**
      * Show the accounts page.
      * Store the secrets in your db
