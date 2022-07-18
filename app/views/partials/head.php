@@ -7,4 +7,4 @@
     <link rel="stylesheet" type="text/css" href="<?= asset('css/style.css'); ?>">
 </head>
 <body>
-    <?php require('nav.php'); ?>
+    <?php require 'nav.php'; ?>
