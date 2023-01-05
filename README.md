@@ -23,6 +23,8 @@ git clone https://github.com/muath-ye/miniature-octo.git
 
 cd miniature-octo
 
+composer install
+
 php -S 127.0.0.1:8000
 ```
 
