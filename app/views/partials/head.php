@@ -12,4 +12,4 @@ $debugbar["messages"]->addMessage("hello world!");
     <?php echo $debugbarRenderer->renderHead() ?>
 </head>
 <body>
-    <?php require('nav.php'); ?>
+    <?php require 'nav.php'; ?>
