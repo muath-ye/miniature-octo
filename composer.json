@@ -4,12 +4,16 @@
     "type": "project",
     "require": {
         "filp/whoops": "^2.14",
-        "symfony/dotenv": "^6.0"
+        "symfony/dotenv": "^6.0",
+        "maximebf/debugbar": "^1.18",
+        "illuminate/console": "^8.0",
+        "illuminate/events": "^8.0"
     },
     "license": "MIT",
     "autoload": {
         "classmap": [
-            "./"
+            "./",
+            "app/commands"
         ],
         "files": ["core/helpers.php"]
     },

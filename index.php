@@ -6,6 +6,16 @@ require 'core/bootstrap.php';
 use App\Core\{Router, Request};
 use Symfony\Component\Dotenv\Dotenv;
 
+use DebugBar\StandardDebugBar;
+
+// $debugbar = new StandardDebugBar();
+// $debugbarRenderer = $debugbar->getJavascriptRenderer();
+
+global $debugbar, $debugbarRenderer;
+
+$debugbar = new StandardDebugBar();
+$debugbarRenderer = $debugbar->getJavascriptRenderer();
+
 /** Whoops */
 $whoops = new \Whoops\Run;
 $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);

@@ -1,3 +1,4 @@
+<?php echo $debugbarRenderer->render() ?>
 <script src="<?= asset('js/bootstrap.bundle.min.js') ?>"></script>
 <script>
     /**
