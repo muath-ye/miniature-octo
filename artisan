@@ -15,5 +15,6 @@ $artisan->setName('My Console App Name');
 
 // Bind a command
 $artisan->resolve(HelloWorld::class);
+$artisan->resolve(ServeCommand::class);
 
 $artisan->run();
